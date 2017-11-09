@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.aditkus.aplikasikuismatematika.MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsoalbaru"
+        android:text="Soal Baru"
+        android:onClick="soalbaru"/>
+
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Input jawaban"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/angka2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btncek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cek jawaban"
+        android:layout_below="@+id/input"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="cekjawab"
+        android:layout_marginTop="21dp" />
+
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_toLeftOf="@+id/operator"
+        android:layout_toStartOf="@+id/operator" />
+
+    <TextView
+        android:id="@+id/benar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/btncek"
+        android:layout_alignLeft="@+id/salah"
+        android:layout_alignStart="@+id/salah" />
+
+    <TextView
+        android:id="@+id/salah"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/textView11"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jawaban benar"
+        android:layout_alignBaseline="@+id/benar"
+        android:layout_alignBottom="@+id/benar"
+        android:layout_toRightOf="@+id/operator"
+        android:layout_toEndOf="@+id/operator" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jawaban salah"
+        android:layout_below="@+id/benar"
+        android:layout_alignRight="@+id/textView10"
+        android:layout_alignEnd="@+id/textView10"
+        android:layout_marginTop="44dp" />
+
+    <EditText
+        android:id="@+id/angka1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:enabled="false"
+        android:focusable="false"
+        android:hint="angka1"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_below="@+id/btnsoalbaru"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp" />
+
+    <EditText
+        android:id="@+id/operator"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:enabled="false"
+        android:focusable="false"
+        android:hint="operator"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/angka1"
+        android:layout_alignBottom="@+id/angka1"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/angka2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="angka2"
+        android:enabled="false"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/angka1"
+        android:layout_alignBottom="@+id/angka1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="34dp"
+        android:layout_marginEnd="34dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="angka1"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/angka1"
+        android:layout_alignStart="@+id/angka1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/operator"
+        android:layout_alignLeft="@+id/operator"
+        android:layout_alignStart="@+id/operator"
+        android:text="operator" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/angka2"
+        android:layout_alignLeft="@+id/angka2"
+        android:layout_alignStart="@+id/angka2"
+        android:text="angka2" />
+
+
+</RelativeLayout>
